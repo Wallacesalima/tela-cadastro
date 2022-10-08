@@ -33,8 +33,8 @@ export default function useClientes() {
     }
 
     async function excluirCliente(cliente: Cliente) {
-        await repo.excluir(cliente)
         obterTodos()
+        await repo.excluir(cliente)
     }
 
     function novoCliente() {
@@ -43,8 +43,8 @@ export default function useClientes() {
     }
 
     async function salvarCliente(cliente: Cliente) {
-        await repo.salvar(cliente)
         obterTodos()
+        await repo.salvar(cliente)
     }
 
     return {

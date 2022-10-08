@@ -1,5 +1,4 @@
 
-
 import Botao from '../components/Botao'
 import Formulario from '../components/Formulario'
 import Layout from '../components/Layout'
@@ -43,7 +42,7 @@ export default function Home() {
         ) : (
           <Formulario
             cliente={cliente}
-            clientemudou={salvarCliente}
+            clienteMudou={salvarCliente}
             cancelado={exibirTabela}
           />
         )}
