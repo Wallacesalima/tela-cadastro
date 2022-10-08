@@ -3,9 +3,9 @@ import 'firebase/firestore'
 
 if (!firebase.apps.length) {
     firebase.initializeApp({
-        apikey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY ,
-        authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTHDOMAIN ,
-        projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECTID ,
+        apikey: "AIzaSyCPUjiPMsBwyltIXKpPs7eQDL290hQUHEc",
+        authDomain: "tela-cadastro-4b2c5.firebaseapp.com" ,
+        projectId: "tela-cadastro-4b2c5" ,
     })
 }
 
