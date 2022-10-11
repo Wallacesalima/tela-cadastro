@@ -1,3 +1,20 @@
+<div align="center" >
+<h1> Demonstração </h1>
+<p ><img height="200em" src="src/assets/lv_0_20221010223043 (1).gif"></p>
+  <h2> Nesse projeto foi utilizado: </h2>
+ <img align="center" alt="Wallace-CSS" height="30" width="40" 
+src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+ <img align="center" alt="Wallace-Js" height="30" width="40" 
+src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+ <img align="center" alt="Wallace-nodejs" height="30" width="40" 
+ src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+  <img align="center" alt="Wallace-nodejs" height="30" width="40" 
+ src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />    
+</div>
+<h1 align="center" > Sobre projeto feito em next.js</h1>
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
