@@ -8,6 +8,7 @@ interface LayoutProps {
 export default function Layout(props: LayoutProps) {
     return (
         <div className={`
+        text-sm md:text-base
          flex flex-col w-2/3
         bg-white text-gray-800 rounded-md
     `}>

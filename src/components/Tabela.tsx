@@ -13,8 +13,8 @@ export default function Tabela(props) {
 
     function renderizarCabecalho() {
         return (
-            <tr>
-                <th className="text-left p-3  ">Código</th>
+            <tr className="">
+                <th className=" text-left p-3 hidden md:flex flex-col w-2/3">Código</th>
                 <th className="text-left p-3 ">Nome</th>
                 <th className="text-left p-3 ">Idade</th>
                 {exibirAcoes ? <th className=" p-3 ">Ações</th> : false}
@@ -28,7 +28,7 @@ export default function Tabela(props) {
                 <tr key={Cliente.id}
                     className={`${i % 2 === 0 ? 'bg-purple-100' : 'bg-purple-200'}`}>
 
-                    <td className="text-left p-3">{Cliente.id}</td>
+                    <td className="text-left p-3 hidden md:flex flex-col w-2/3">{Cliente.id}</td>
                     <td className="text-left p-3">{Cliente.nome}</td>
                     <td className="text-left p-3">{Cliente.idade}</td>
                     {exibirAcoes ? renderizarAcoes(Cliente) : false}
