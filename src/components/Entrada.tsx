@@ -10,7 +10,7 @@ interface EntradaProps {
 export default function Entrada(props: EntradaProps) {
     return (
         <div className= {`flex flex-col ${props.className}`}>
-            <label className="m-2 font-medium">
+            <label className="m-2">
                 {props.texto}
             </label>
             <input

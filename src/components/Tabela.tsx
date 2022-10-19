@@ -13,10 +13,10 @@ export default function Tabela(props) {
 
     function renderizarCabecalho() {
         return (
-            <tr className="">
+            <tr >
                 <th className=" text-left p-3 hidden md:flex flex-col w-2/3">Código</th>
                 <th className="text-left p-3 ">Nome</th>
-                <th className="text-left p-3 ">Idade</th>
+                <th className="text-left p-3  ">Idade</th>
                 {exibirAcoes ? <th className=" p-3 ">Ações</th> : false}
             </tr>
         )
@@ -26,11 +26,11 @@ export default function Tabela(props) {
         return props.clientes?.map((Cliente, i) => {
             return (
                 <tr key={Cliente.id}
-                    className={`${i % 2 === 0 ? 'bg-purple-100' : 'bg-purple-200'}`}>
+                    className={`${i % 2 === 0 ? 'bg-purple-100' : 'bg-purple-200'} `}>
 
                     <td className="text-left p-3 hidden md:flex flex-col w-2/3">{Cliente.id}</td>
-                    <td className="text-left p-3">{Cliente.nome}</td>
-                    <td className="text-left p-3">{Cliente.idade}</td>
+                    <td className="text-left p-3 ">{Cliente.nome}</td>
+                    <td className="text-left p-3 ">{Cliente.idade}</td>
                     {exibirAcoes ? renderizarAcoes(Cliente) : false}
                 </tr>
             )
@@ -44,7 +44,7 @@ export default function Tabela(props) {
                 {props.clienteSelecionado ? (
                     <button onClick={() => props.clienteSelecionado?.(cliente)} className={`
                 flex justify-center items-center first-letter
-                text-green-600 rounded-full p-2 m-1
+                text-green-600 rounded-full p-1 sm:p-2  m-0 sm:m-1
                 hover:bg-purple-50
                 `}>
                         {IconeEdicao}
@@ -54,7 +54,7 @@ export default function Tabela(props) {
                 {props.clienteExcluido ? (
                     <button onClick={() => props.clienteExcluido?.(cliente)} className={`
                 flex justify-center items-center first-letter
-                text-red-500 rounded-full p-2 m-1
+                text-red-500 rounded-full p-1 sm:p-2 m-1
                 hover:bg-purple-50
                 `}>
                         {IconeLixo}
